@@ -10,9 +10,7 @@ The application allows users to:
 * Compare results from multiple flight providers.
 * View flight pricing and trip details.
 * Create a booking and receive a booking reference code. 
-
----
-
+   
 ## Architecture
 
 ### Backend
