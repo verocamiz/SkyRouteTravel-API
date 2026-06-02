@@ -35,8 +35,8 @@ namespace SkyRouteTravel_API.Providers
                     Country = "AR"
                 },
 
-                DepartureTime = new DateTime(2026, 07, 06, 08, 00, 00),
-                ArrivalTime   = new DateTime(2026, 07, 06, 09, 30, 00),
+                DepartureTime = new DateTime(2026, 07, 06, 18, 00, 00),
+                ArrivalTime   = new DateTime(2026, 07, 06, 19, 20, 00),
 
                 CabinClass = CabinClass.Economy,
 
