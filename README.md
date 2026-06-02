@@ -84,20 +84,3 @@ Run:
 dotnet restore
 dotnet run
 ```  
-### Frontend
-
-Requirements:
-
-* Node.js
-* Angular CLI
-
-Run:
-
-```bash
-npm install
-ng serve
-```
-
-Application URL:
-
-http://localhost:4200
