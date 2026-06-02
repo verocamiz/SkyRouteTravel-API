@@ -50,43 +50,23 @@ The booking endpoint receives passenger information and returns a generated book
 
 ## Technical Decisions
 
-### Dependency Injection
+* I Decided to use Dependency Injection in order to loose coupling between components for services and providers.
 
-ASP.NET Core Dependency Injection is used to register services and providers.
+* For the design of the flight providers I decided to use strategy pattern since additional providers may need to be integrated in the future.
 
-### Asynchronous Operations
+* Providers use asynchronous methods to simulate external API integrations and demonstrate loading states in the Angular application.
 
-Providers use asynchronous methods to simulate external API integrations and demonstrate loading states in the Angular application.
+* Flight providers currently return hardcoded flight data.
 
-### Mock Data
-
-Flight providers currently return hardcoded flight data.
-
-In a production environment, these providers would be replaced with external API integrations or database access.
-
-### Error Handling
-
-A global exception middleware is used to centralize error handling and logging.
-
+* A global exception middleware is used to centralize error handling and logging.
+ 
 ---
 
 ## Trade-offs and Known Limitations
-
-### No Persistence Layer
-
-The application does not persist flights or bookings.
-
-Data is generated in-memory to keep the implementation focused on the challenge requirements.
-
-### Mock Providers
-
-Flight information is simulated using static datasets.
-
-No real airline APIs are integrated.
-  
-### Authentication
-
-Authentication and authorization are not implemented because they are outside the scope of the challenge.
+ 
+* The application does not persist flights or bookings. Data is generated in-memory to keep the implementation focused on the challenge requirements.
+ 
+*  Authentication and authorization are not implemented.
 
 ---
 
