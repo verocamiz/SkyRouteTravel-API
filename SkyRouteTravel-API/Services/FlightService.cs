@@ -15,7 +15,7 @@ namespace SkyRouteTravel_API.Services
             _providers = providers;
         }
 
-        public async Task<IEnumerable<FlightResponseDTO>> SearchFlightsAsync(
+        public async Task<List<FlightResponseDTO>> SearchFlightsAsync(
             FlightSearchRequestDTO request)
         {
             var searchTasks = _providers
@@ -52,7 +52,7 @@ namespace SkyRouteTravel_API.Services
                 PricePerPassenger = f.PricePerPassenger,
 
                 TotalPrice = f.PricePerPassenger * request.Passengers
-            });
+            }).ToList();
         }
     }
 }

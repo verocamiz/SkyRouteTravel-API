@@ -91,8 +91,8 @@ namespace SkyRouteTravel_API.Providers
                         Country = "US"
                     },
                      
-                    DepartureTime = new DateTime(2026, 07, 10, 22, 00, 00),
-                    ArrivalTime   = new DateTime(2026, 07, 11, 07, 00, 00),
+                    DepartureTime = new DateTime(2026, 07, 13, 23, 00, 00),
+                    ArrivalTime   = new DateTime(2026, 07, 14, 09, 00, 00),
 
                     CabinClass = CabinClass.FirstClass,
 
