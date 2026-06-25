@@ -19,7 +19,7 @@ namespace SkyRouteTravel_API.Services
             FlightSearchRequestDTO request)
         {
             var searchTasks = _providers
-                .Select(provider => provider.SearchFlightsAsync(request));
+                .Select(provider => provider.SearchFlightsAsync());
 
             var providerResults = await Task.WhenAll(searchTasks);
 
