@@ -5,8 +5,7 @@ namespace SkyRouteTravel_API.Providers
 {
     public class GlobalAirProvider : IFlightProvider
     {
-        public async Task<IEnumerable<Flight>> SearchFlightsAsync(
-            FlightSearchRequestDTO request)
+        public async Task<IEnumerable<Flight>> SearchFlightsAsync()
         {
             // Simulate external provider API latency
             // Used only to demonstrate Angular loading states.

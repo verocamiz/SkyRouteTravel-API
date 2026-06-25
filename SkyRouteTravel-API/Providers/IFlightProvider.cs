@@ -5,8 +5,7 @@ namespace SkyRouteTravel_API.Providers
 {
     public interface IFlightProvider
     {
-        Task<IEnumerable<Flight>> SearchFlightsAsync(
-            FlightSearchRequestDTO request); 
+        Task<IEnumerable<Flight>> SearchFlightsAsync(); 
 
     }
        

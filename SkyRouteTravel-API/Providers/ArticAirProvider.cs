@@ -6,8 +6,7 @@ namespace SkyRouteTravel_API.Providers
     public class ArcticAirProvider : IFlightProvider
     {
 
-        public async Task<IEnumerable<Flight>> SearchFlightsAsync(
-            FlightSearchRequestDTO request)
+        public async Task<IEnumerable<Flight>> SearchFlightsAsync()
         {
             // Simulate external provider API latency 
             await Task.Delay(1000);
