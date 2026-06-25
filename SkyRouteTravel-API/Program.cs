@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IFlightProvider, GlobalAirProvider>();
 
 builder.Services.AddScoped<IFlightProvider, BudgetWingsProvider>();
+builder.Services.AddScoped<IFlightProvider, ArcticAirProvider>();
 
 builder.Services.AddScoped<IFlightService, FlightService>(); 
 
